@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GLX2kJ1GEeiLHaXpSghBGw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_GLX2kZ1GEeiLHaXpSghBGw" comment="" name="WS_Adhesion" prompt="WS_Adhesion?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GLX2kp1GEeiLHaXpSghBGw" comment="" name="WS_Personne" prompt="WS_Personne?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GLX2k51GEeiLHaXpSghBGw" comment="" name="WS_Distributeur" prompt="WS_Distributeur?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GLX2lJ1GEeiLHaXpSghBGw" comment="" name="WS_Societe" prompt="WS_Societe?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GLX2lZ1GEeiLHaXpSghBGw" comment="" name="WS_MontantGarantie" prompt="WS_MontantGarantie?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GLX2lp1GEeiLHaXpSghBGw" comment="" name="WS_PieceWebMetier" prompt="WS_PieceWebMetier?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GLX2l51GEeiLHaXpSghBGw" comment="" name="WS_Domain" prompt="WS_Domain?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GLX2mJ1GEeiLHaXpSghBGw" comment="" name="WS_InocsFare" prompt="WS_InocsFare?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GLX2mZ1GEeiLHaXpSghBGw" comment="" name="WS_Inocs" prompt="WS_Inocs?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GLX2mp1GEeiLHaXpSghBGw" comment="" name="Rest_Adhesion" prompt="Rest_Adhesion?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GLX2m51GEeiLHaXpSghBGw" comment="" name="Rest_Acte" prompt="Rest_Acte?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GLX2nJ1GEeiLHaXpSghBGw" comment="" name="WS_DomainDistributeur" prompt="WS_DomainDistributeur?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

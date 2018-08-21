@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GL9scJ1GEeiLHaXpSghBGw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_GL9scZ1GEeiLHaXpSghBGw" comment="" name="WS_Adhesion" prompt="WS_Adhesion?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GL9scp1GEeiLHaXpSghBGw" comment="" name="WS_Personne" prompt="WS_Personne?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GL9sc51GEeiLHaXpSghBGw" comment="" name="WS_Distributeur" prompt="WS_Distributeur?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GL9sdJ1GEeiLHaXpSghBGw" comment="" name="WS_Societe" prompt="WS_Societe?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GL9sdZ1GEeiLHaXpSghBGw" comment="" name="WS_MontantGarantie" prompt="WS_MontantGarantie?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GL9sdp1GEeiLHaXpSghBGw" comment="" name="WS_PieceWebMetier" prompt="WS_PieceWebMetier?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GL9sd51GEeiLHaXpSghBGw" comment="" name="WS_Domain" prompt="WS_Domain?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GL9seJ1GEeiLHaXpSghBGw" comment="" name="WS_InocsFare" prompt="WS_InocsFare?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GL9seZ1GEeiLHaXpSghBGw" comment="" name="WS_Inocs" prompt="WS_Inocs?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GL9sep1GEeiLHaXpSghBGw" comment="" name="Rest_Adhesion" prompt="Rest_Adhesion?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GL9se51GEeiLHaXpSghBGw" comment="" name="Rest_Acte" prompt="Rest_Acte?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GL9sfJ1GEeiLHaXpSghBGw" comment="" name="WS_DomainDistributeur" prompt="WS_DomainDistributeur?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GL9sfZ1GEeiLHaXpSghBGw" comment="" name="WS_DomainProduit" prompt="WS_DomainProduit?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

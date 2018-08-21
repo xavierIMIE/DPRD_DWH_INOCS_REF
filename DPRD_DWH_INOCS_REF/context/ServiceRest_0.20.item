@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GI5KUJ1GEeiLHaXpSghBGw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_GI5KUZ1GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestAssureurPart1" prompt="ServiceRest_RestAssureurPart1?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KUp1GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestAssureurPart2" prompt="ServiceRest_RestAssureurPart2?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KU51GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestAdhesion" prompt="ServiceRest_RestAdhesion?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KVJ1GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestPersonne" prompt="ServiceRest_RestPersonne?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KVZ1GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestAssureurAdhesion" prompt="ServiceRest_RestAssureurAdhesion?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KVp1GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestActe" prompt="ServiceRest_RestActe?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KV51GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestDistributeur" prompt="ServiceRest_RestDistributeur?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KWJ1GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestSociete" prompt="ServiceRest_RestSociete?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KWZ1GEeiLHaXpSghBGw" comment="" name="attribut" prompt="attribut?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KWp1GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestLibelleFr" prompt="ServiceRest_RestLibelleFr?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KW51GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestLibelleEn" prompt="ServiceRest_RestLibelleEn?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KXJ1GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestLibelleIt" prompt="ServiceRest_RestLibelleIt?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KXZ1GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestLibelleDe" prompt="ServiceRest_RestLibelleDe?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KXp1GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestMontantGarantie" prompt="ServiceRest_RestMontantGarantie?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GI5KX51GEeiLHaXpSghBGw" comment="" name="ServiceRest_RestPieceWebMetier" prompt="ServiceRest_RestPieceWebMetier?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

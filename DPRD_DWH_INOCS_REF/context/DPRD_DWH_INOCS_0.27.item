@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GFhtQJ1GEeiLHaXpSghBGw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_GFhtQZ1GEeiLHaXpSghBGw" comment="" name="DPRD_DWH_INOCS_Server" prompt="DPRD_DWH_INOCS_Server?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GFhtQp1GEeiLHaXpSghBGw" comment="" name="DPRD_DWH_INOCS_Password" prompt="DPRD_DWH_INOCS_Password?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter xmi:id="_GFhtQ51GEeiLHaXpSghBGw" comment="" name="DPRD_DWH_INOCS_Database" prompt="DPRD_DWH_INOCS_Database?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GFhtRJ1GEeiLHaXpSghBGw" comment="" name="DPRD_DWH_INOCS_AdditionalParams" prompt="DPRD_DWH_INOCS_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GFhtRZ1GEeiLHaXpSghBGw" comment="" name="DPRD_DWH_INOCS_Schema" prompt="DPRD_DWH_INOCS_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GFhtRp1GEeiLHaXpSghBGw" comment="" name="DPRD_DWH_INOCS_Port" prompt="DPRD_DWH_INOCS_Port?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GFhtR51GEeiLHaXpSghBGw" comment="" name="DPRD_DWH_INOCS_Login" prompt="DPRD_DWH_INOCS_Login?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

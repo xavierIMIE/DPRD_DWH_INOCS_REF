@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GK1rEJ1GEeiLHaXpSghBGw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_GK1rEZ1GEeiLHaXpSghBGw" comment="" name="WS_AssureurPart1" prompt="WS_AssureurPart1?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rEp1GEeiLHaXpSghBGw" comment="" name="WS_AssureurPart2" prompt="WS_AssureurPart2?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rE51GEeiLHaXpSghBGw" comment="" name="WS_Adhesion" prompt="WS_Adhesion?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rFJ1GEeiLHaXpSghBGw" comment="" name="WS_Personne" prompt="WS_Personne?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rFZ1GEeiLHaXpSghBGw" comment="" name="WS_AssureurAdhesion" prompt="WS_AssureurAdhesion?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rFp1GEeiLHaXpSghBGw" comment="" name="WS_Distributeur" prompt="WS_Distributeur?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rF51GEeiLHaXpSghBGw" comment="" name="WS_Societe" prompt="WS_Societe?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rGJ1GEeiLHaXpSghBGw" comment="" name="WS_LibelleFr" prompt="WS_LibelleFr?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rGZ1GEeiLHaXpSghBGw" comment="" name="WS_LibelleEn" prompt="WS_LibelleEn?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rGp1GEeiLHaXpSghBGw" comment="" name="WS_LibelleIt" prompt="WS_LibelleIt?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rG51GEeiLHaXpSghBGw" comment="" name="WS_LibelleDe" prompt="WS_LibelleDe?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rHJ1GEeiLHaXpSghBGw" comment="" name="WS_MontantGarantie" prompt="WS_MontantGarantie?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rHZ1GEeiLHaXpSghBGw" comment="" name="WS_PieceWebMetier" prompt="WS_PieceWebMetier?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rHp1GEeiLHaXpSghBGw" comment="" name="WS_Domain" prompt="WS_Domain?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rH51GEeiLHaXpSghBGw" comment="" name="WS_InocsFare" prompt="WS_InocsFare?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rIJ1GEeiLHaXpSghBGw" comment="" name="WS_Inocs" prompt="WS_Inocs?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rIZ1GEeiLHaXpSghBGw" comment="" name="Rest_Adhesion" prompt="Rest_Adhesion?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GK1rIp1GEeiLHaXpSghBGw" comment="" name="Rest_Acte" prompt="Rest_Acte?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

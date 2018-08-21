@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GPQRAJ1GEeiLHaXpSghBGw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_GPQRAZ1GEeiLHaXpSghBGw" comment="" name="dateMiseAJour" prompt="dateMiseAJour?" promptNeeded="false" type="id_Date" value=""/>
+  <contextParameter xmi:id="_GPQRAp1GEeiLHaXpSghBGw" comment="" name="isAInit" prompt="isAInit?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GPQRA51GEeiLHaXpSghBGw" comment="" name="borneInf" prompt="borneInf?" promptNeeded="false" type="id_Date" value=""/>
+  <contextParameter xmi:id="_GPQRBJ1GEeiLHaXpSghBGw" comment="" name="borneSup" prompt="borneSup?" promptNeeded="false" type="id_Date" value=""/>
+  <contextParameter xmi:id="_GPQRBZ1GEeiLHaXpSghBGw" comment="" name="url" prompt="url?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GPQRBp1GEeiLHaXpSghBGw" comment="" name="dateTraitement" prompt="dateTraitement?" promptNeeded="false" type="id_Date" value=""/>
+  <contextParameter xmi:id="_GPQRB51GEeiLHaXpSghBGw" comment="" name="tmpPath" prompt="tmpPath?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

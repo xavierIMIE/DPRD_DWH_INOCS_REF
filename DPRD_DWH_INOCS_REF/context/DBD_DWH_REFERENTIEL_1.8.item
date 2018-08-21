@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_F_Xa4J1GEeiLHaXpSghBGw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_F_Xa4Z1GEeiLHaXpSghBGw" comment="" name="DBD_DWH_REFERENTIEL_Port" prompt="DBD_DWH_REFERENTIEL_Port?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_F_Xa4p1GEeiLHaXpSghBGw" comment="" name="DBD_DWH_REFERENTIEL_Login" prompt="DBD_DWH_REFERENTIEL_Login?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_F_Xa451GEeiLHaXpSghBGw" comment="" name="DBD_DWH_REFERENTIEL_Schema" prompt="DBD_DWH_REFERENTIEL_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_F_Xa5J1GEeiLHaXpSghBGw" comment="" name="DBD_DWH_REFERENTIEL_AdditionalParams" prompt="DBD_DWH_REFERENTIEL_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_F_Xa5Z1GEeiLHaXpSghBGw" comment="" name="DBD_DWH_REFERENTIEL_Server" prompt="DBD_DWH_REFERENTIEL_Server?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_F_Xa5p1GEeiLHaXpSghBGw" comment="" name="DBD_DWH_REFERENTIEL_Database" prompt="DBD_DWH_REFERENTIEL_Database?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_F_Xa551GEeiLHaXpSghBGw" comment="" name="DBD_DWH_REFERENTIEL_Password" prompt="DBD_DWH_REFERENTIEL_Password?" promptNeeded="false" type="id_Password" value=""/>
+</talendfile:ContextType>

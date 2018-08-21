@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="DPRD_DWH_INOCS_AdditionalParams" prompt="DPRD_DWH_INOCS_AdditionalParams?" promptNeeded="false" repositoryContextId="_5-VhgNvXEeai1c56iI32kw" type="id_String" value=""/>
+    <contextParameter comment="" name="DPRD_DWH_INOCS_Database" prompt="DPRD_DWH_INOCS_Database?" promptNeeded="false" repositoryContextId="_5-VhgNvXEeai1c56iI32kw" type="id_String" value="DPRD_DWH_INOCS"/>
+    <contextParameter comment="" name="DPRD_DWH_INOCS_Login" prompt="DPRD_DWH_INOCS_Login?" promptNeeded="false" repositoryContextId="_5-VhgNvXEeai1c56iI32kw" type="id_String" value="d1talend"/>
+    <contextParameter comment="" name="DPRD_DWH_INOCS_Password" prompt="DPRD_DWH_INOCS_Password?" promptNeeded="false" repositoryContextId="_5-VhgNvXEeai1c56iI32kw" type="id_Password" value="TdFGoKkcfN4Pgh3pVMUhUg=="/>
+    <contextParameter comment="" name="DPRD_DWH_INOCS_Port" prompt="DPRD_DWH_INOCS_Port?" promptNeeded="false" repositoryContextId="_5-VhgNvXEeai1c56iI32kw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="DPRD_DWH_INOCS_Schema" prompt="DPRD_DWH_INOCS_Schema?" promptNeeded="false" repositoryContextId="_5-VhgNvXEeai1c56iI32kw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DPRD_DWH_INOCS_Server" prompt="DPRD_DWH_INOCS_Server?" promptNeeded="false" repositoryContextId="_5-VhgNvXEeai1c56iI32kw" type="id_String" value="d1fretl02"/>
+    <contextParameter comment="" name="attribut" prompt="attribut?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+    <contextParameter comment="" name="ServiceRest_RestActe" prompt="ServiceRest_RestActe?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+    <contextParameter comment="" name="ServiceRest_RestAdhesion" prompt="ServiceRest_RestAdhesion?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+    <contextParameter comment="" name="ServiceRest_RestAssureurAdhesion" prompt="ServiceRest_RestAssureurAdhesion?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+    <contextParameter comment="" name="ServiceRest_RestAssureurPart1" prompt="ServiceRest_RestAssureurPart1?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+    <contextParameter comment="" name="ServiceRest_RestAssureurPart2" prompt="ServiceRest_RestAssureurPart2?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+    <contextParameter comment="" name="ServiceRest_RestDistributeur" prompt="ServiceRest_RestDistributeur?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+    <contextParameter comment="" name="ServiceRest_RestLibelleDe" prompt="ServiceRest_RestLibelleDe?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+    <contextParameter comment="" name="ServiceRest_RestLibelleEn" prompt="ServiceRest_RestLibelleEn?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+    <contextParameter comment="" name="ServiceRest_RestLibelleFr" prompt="ServiceRest_RestLibelleFr?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+    <contextParameter comment="" name="ServiceRest_RestLibelleIt" prompt="ServiceRest_RestLibelleIt?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+    <contextParameter comment="" name="ServiceRest_RestMontantGarantie" prompt="ServiceRest_RestMontantGarantie?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+    <contextParameter comment="" name="ServiceRest_RestPersonne" prompt="ServiceRest_RestPersonne?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+    <contextParameter comment="" name="ServiceRest_RestSociete" prompt="ServiceRest_RestSociete?" promptNeeded="false" repositoryContextId="_9p9pgO7BEeaAtf2LWilvpw" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value=""/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Outils/workspace_Talend_5_6_2/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value=""/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <routinesParameter id="_YIAEwtvNEeaGt9AuztmhjA" name="DataOperation"/>
+    <routinesParameter id="_YIJ1wNvNEeaGt9AuztmhjA" name="Mathematical"/>
+    <routinesParameter id="_YIJ1xNvNEeaGt9AuztmhjA" name="Numeric"/>
+    <routinesParameter id="_YIJ1yNvNEeaGt9AuztmhjA" name="Relational"/>
+    <routinesParameter id="_YIJ1zNvNEeaGt9AuztmhjA" name="StringHandling"/>
+    <routinesParameter id="_YIJ10NvNEeaGt9AuztmhjA" name="TalendDataGenerator"/>
+    <routinesParameter id="_YIS_sNvNEeaGt9AuztmhjA" name="TalendDate"/>
+    <routinesParameter id="_YIS_tNvNEeaGt9AuztmhjA" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="18" offsetLabelY="2" posX="64" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files\TOS_DI\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Tfl6UC7mEeaSJsi6YSsOZQ"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DPRD_DWH_INOCS_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DPRD_DWH_INOCS_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.DPRD_DWH_INOCS_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DPRD_DWH_INOCS_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.DPRD_DWH_INOCS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuflrfUQzXC6lURWK6+NL0Nc6S7tNu+WBZ0="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_Tfl6UC7mEeaSJsi6YSsOZQ - TruncateR_personne"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;truncate table R_cotisationParGarantie&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DPRD_DWH_INOCS_AdditionalParams"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="TruncateR_cotisationParGarantie"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files\TOS_DI\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Tfl6UC7mEeaSJsi6YSsOZQ"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DPRD_DWH_INOCS_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DPRD_DWH_INOCS_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.DPRD_DWH_INOCS_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DPRD_DWH_INOCS_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.DPRD_DWH_INOCS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuflrfUQzXC6lURWK6+NL0Nc6S7tNu+WBZ0="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Tfl6UC7mEeaSJsi6YSsOZQ - R_listeAdhesion"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;R_listeAdhesion&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.DPRD_DWH_INOCS_Schema+&quot;\&quot;.R_listeAdhesion.listeIdAdhesion&quot;&#xA;+&quot; &#xA;FROM&#x9; \&quot;&quot;+context.DPRD_DWH_INOCS_Schema+&quot;\&quot;.R_listeAdhesion&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DPRD_DWH_INOCS_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="listeIdAdhesion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="R_listeAdhesion" name="tMSSqlInput_2">
+      <column comment="" key="false" length="5000" name="listeIdAdhesion" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files\TOS_DI\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_toMywO3UEeaVGu71aqLxAQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="5000" name="listeIdAdhesion" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="listeIdAdhesion" expression="row5.listeIdAdhesion.substring(14); " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="listeIdAdhesion" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files\TOS_DI\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#xA;      "/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="String URL_concatCotisation=context.ServiceRest_RestAdhesion+out1.listeIdAdhesion;&#xA;globalMap.put(&quot;urlCotisation&quot;, URL_concatCotisation);&#xA;//System.out.println(&quot;urlCotisation : &quot;+ (String)globalMap.get(&quot;urlCotisation&quot;));&#xA;&#xA;&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#xA;      "/>
+    <elementParameter field="CHECK" name="Version_V2_0" value="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" value="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" value="true"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaFlex_2"/>
+  </node>
+  <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tREST_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files\TOS_DI\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="URL" value="(String)globalMap.get(&quot;urlCotisation&quot;)"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="MEMO" name="BODY" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tREST_1">
+      <column defaultValue="" key="false" length="0" name="Body" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="ERROR_CODE" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files\TOS_DI\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="XPATH"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="Body"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/adhesions/cotisations/cotisationsParGarantie[*]&quot;"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.bills.bill.line[*]&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="QUERY" value="&quot;id&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cotisation_id"/>
+      <elementValue elementRef="QUERY" value="&quot;cotisation/id&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idGarantie"/>
+      <elementValue elementRef="QUERY" value="&quot;idGarantie&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="montantHt"/>
+      <elementValue elementRef="QUERY" value="&quot;montantHt&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="montantTtc"/>
+      <elementValue elementRef="QUERY" value="&quot;montantTtc&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="remunerationAssureur"/>
+      <elementValue elementRef="QUERY" value="&quot;remunerationAssureur&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typeFrais"/>
+      <elementValue elementRef="QUERY" value="&quot;typeFrais&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typePrime_id"/>
+      <elementValue elementRef="QUERY" value="&quot;typePrime/id&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typePrime_identifiant"/>
+      <elementValue elementRef="QUERY" value="&quot;typePrime/identifiant&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cotisation_id"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idGarantie"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="montantHt"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="montantTtc"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="remunerationAssureur"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typeFrais"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typePrime_id"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typePrime_identifiant"/>
+      <elementValue elementRef="QUERY" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="tExtractJSONFields_1"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractJSONFields_1">
+      <column comment="" key="false" name="id" nullable="true" pattern="" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cotisation_id" nullable="true" pattern="" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="idGarantie" nullable="true" pattern="" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="montantHt" nullable="true" pattern="" sourceType="VARCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" name="montantTtc" nullable="true" pattern="" sourceType="VARCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" name="remunerationAssureur" nullable="true" pattern="" sourceType="VARCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" name="typeFrais" nullable="true" pattern="" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="typePrime_id" nullable="true" pattern="" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="typePrime_identifiant" nullable="true" pattern="" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" name="id" nullable="true" pattern="" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cotisation_id" nullable="true" pattern="" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="idGarantie" nullable="true" pattern="" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="montantHt" nullable="true" pattern="" sourceType="VARCHAR" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" name="montantTtc" nullable="true" pattern="" sourceType="VARCHAR" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" name="remunerationAssureur" nullable="true" pattern="" sourceType="VARCHAR" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" name="typeFrais" nullable="true" pattern="" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="typePrime_id" nullable="true" pattern="" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="typePrime_identifiant" nullable="true" pattern="" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files\TOS_DI\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_toMywO3UEeaVGu71aqLxAQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="R_cotisationParGarantie" name="out2">
+      <column key="false" length="500" name="id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="cotisation_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="idGarantie" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="20" name="montantHt" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="20" name="montantTtc" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="20" name="remunerationAssureur" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="typeFrais" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="typePrime_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="typePrime_identifiant" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="dimensionGarantie_Libelle_fr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="dimensionGarantie_Libelle_en" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="dimensionGarantie_Libelle_it" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="dimensionGarantie_Libelle_de" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out2">
+        <mapperTableEntries name="id" expression="row2.id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="cotisation_id" expression="row2.cotisation_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="idGarantie" expression="row2.idGarantie" type="id_String" nullable="true"/>
+        <mapperTableEntries name="montantHt" expression="(row2.montantHt != null) ? new BigDecimal(row2.montantHt): null; " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="montantTtc" expression="(row2.montantTtc != null) ? new BigDecimal(row2.montantTtc): null; " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="remunerationAssureur" expression="(row2.remunerationAssureur != null) ? new BigDecimal(row2.remunerationAssureur): null; " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="typeFrais" expression="row2.typeFrais" type="id_String" nullable="true"/>
+        <mapperTableEntries name="typePrime_id" expression="row2.typePrime_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="typePrime_identifiant" expression="row2.typePrime_identifiant" type="id_String" nullable="true"/>
+        <mapperTableEntries name="dimensionGarantie_Libelle_fr" expression="row3.libelle_fr " type="id_String" nullable="true"/>
+        <mapperTableEntries name="dimensionGarantie_Libelle_en" expression="row3.libelle_en " type="id_String" nullable="true"/>
+        <mapperTableEntries name="dimensionGarantie_Libelle_it" expression="row3.libelle_it " type="id_String" nullable="true"/>
+        <mapperTableEntries name="dimensionGarantie_Libelle_de" expression="row3.libelle_de " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="cotisation_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="idGarantie" type="id_String" nullable="true"/>
+        <mapperTableEntries name="montantHt" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="montantTtc" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="remunerationAssureur" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="typeFrais" type="id_String" nullable="true"/>
+        <mapperTableEntries name="typePrime_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="typePrime_identifiant" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="attribut" expression="&quot;DimensionGarantie.&quot;+  row2.idGarantie " type="id_String" operator="="/>
+        <mapperTableEntries name="domaine" type="id_String" nullable="true"/>
+        <mapperTableEntries name="indice" type="id_String" nullable="true"/>
+        <mapperTableEntries name="libelle_fr" type="id_String" nullable="true"/>
+        <mapperTableEntries name="libelle_en" type="id_String" nullable="true"/>
+        <mapperTableEntries name="libelle_it" type="id_String" nullable="true"/>
+        <mapperTableEntries name="libelle_de" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files\TOS_DI\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Tfl6UC7mEeaSJsi6YSsOZQ"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.DPRD_DWH_INOCS_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DPRD_DWH_INOCS_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.DPRD_DWH_INOCS_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DPRD_DWH_INOCS_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.DPRD_DWH_INOCS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuflrfUQzXC6lURWK6+NL0Nc6S7tNu+WBZ0="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;R_cotisationParGarantie&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="id"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1"/>
+    <elementParameter field="TEXT" name="STEP" value="1"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_Tfl6UC7mEeaSJsi6YSsOZQ - R_cotisationParGarantie"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DPRD_DWH_INOCS_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cotisation_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idGarantie"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="montantHt"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="montantTtc"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="remunerationAssureur"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typeFrais"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typePrime_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typePrime_identifiant"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dimensionGarantie_Libelle_fr"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dimensionGarantie_Libelle_en"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dimensionGarantie_Libelle_it"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dimensionGarantie_Libelle_de"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="true"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="R_cotisationParGarantie"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata comment="" connector="FLOW" label="R_cotisationParGarantie" name="R_cotisationParGarantie" type="TABLE">
+      <column key="false" length="500" name="id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="cotisation_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="idGarantie" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="20" name="montantHt" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="20" name="montantTtc" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="20" name="remunerationAssureur" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="typeFrais" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="typePrime_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="typePrime_identifiant" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="dimensionGarantie_Libelle_fr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="dimensionGarantie_Libelle_en" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="dimensionGarantie_Libelle_it" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="dimensionGarantie_Libelle_de" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="R_cotisationParGarantie" name="REJECT">
+      <column key="false" length="500" name="id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="cotisation_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="idGarantie" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="20" name="montantHt" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="20" name="montantTtc" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="20" name="remunerationAssureur" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="typeFrais" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="typePrime_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="typePrime_identifiant" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="dimensionGarantie_Libelle_fr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="dimensionGarantie_Libelle_en" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="dimensionGarantie_Libelle_it" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="500" name="dimensionGarantie_Libelle_de" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files\TOS_DI\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Tfl6UC7mEeaSJsi6YSsOZQ"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DPRD_DWH_INOCS_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DPRD_DWH_INOCS_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.DPRD_DWH_INOCS_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DPRD_DWH_INOCS_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.DPRD_DWH_INOCS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuflrfUQzXC6lURWK6+NL0Nc6S7tNu+WBZ0="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Tfl6UC7mEeaSJsi6YSsOZQ - R_libelle"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;R_libelle&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.DPRD_DWH_INOCS_Schema+&quot;\&quot;.R_libelle.attribut,&#xA;&#x9;&#x9;\&quot;&quot;+context.DPRD_DWH_INOCS_Schema+&quot;\&quot;.R_libelle.domaine,&#xA;&#x9;&#x9;\&quot;&quot;+context.DPRD_DWH_INOCS_Schema+&quot;\&quot;.R_libelle.indice,&#xA;&#x9;&#x9;\&quot;&quot;+context.DPRD_DWH_INOCS_Schema+&quot;\&quot;.R_libelle.libelle_fr,&#xA;&#x9;&#x9;\&quot;&quot;+context.DPRD_DWH_INOCS_Schema+&quot;\&quot;.R_libelle.libelle_en,&#xA;&#x9;&#x9;\&quot;&quot;+context.DPRD_DWH_INOCS_Schema+&quot;\&quot;.R_libelle.libelle_it,&#xA;&#x9;&#x9;\&quot;&quot;+context.DPRD_DWH_INOCS_Schema+&quot;\&quot;.R_libelle.libelle_de&quot;&#xA;+&quot;&#xA;FROM&#x9;\&quot;&quot;+context.DPRD_DWH_INOCS_Schema+&quot;\&quot;.R_libelle&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DPRD_DWH_INOCS_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="attribut"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="domaine"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="indice"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libelle_fr"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libelle_en"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libelle_it"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libelle_de"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="dimensionGarantie"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="R_libelle" name="tMSSqlInput_1">
+      <column comment="" key="true" length="500" name="attribut" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="domaine" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="indice" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="libelle_fr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="libelle_en" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="libelle_it" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="500" name="libelle_de" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlRow_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlRow_1" target="tMSSqlInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="listeIdAdhesion"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tJavaFlex_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="listeIdAdhesion"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tJavaFlex_2" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_2" target="tREST_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tREST_1" offsetLabelX="0" offsetLabelY="0" source="tREST_1" target="tExtractJSONFields_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="Body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ERROR_CODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_1" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cotisation_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="idGarantie"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="montantHt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="montantTtc"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="remunerationAssureur"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="typeFrais"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="typePrime_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="typePrime_identifiant"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMSSqlOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cotisation_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="idGarantie"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="montantHt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="montantTtc"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="remunerationAssureur"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="typeFrais"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="typePrime_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="typePrime_identifiant"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dimensionGarantie_Libelle_fr"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dimensionGarantie_Libelle_en"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dimensionGarantie_Libelle_it"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dimensionGarantie_Libelle_de"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="attribut"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="domaine"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="indice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="libelle_fr"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="libelle_en"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="libelle_it"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="libelle_de"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Récupération des infos des adhésions par liste d'adhésions"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>

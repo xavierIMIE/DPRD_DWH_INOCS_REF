@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GBAZoJ1GEeiLHaXpSghBGw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_GBAZoZ1GEeiLHaXpSghBGw" comment="" name="DBD_PARAMETRAGE_Serveur" prompt="DBD_PARAMETRAGE_Serveur?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GBAZop1GEeiLHaXpSghBGw" comment="" name="DBD_PARAMETRAGE_Password" prompt="DBD_PARAMETRAGE_Password?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter xmi:id="_GBAZo51GEeiLHaXpSghBGw" comment="" name="DBD_PARAMETRAGE_Login" prompt="DBD_PARAMETRAGE_Login?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GBAZpJ1GEeiLHaXpSghBGw" comment="" name="DBD_PARAMETRAGE_AdditionalParams" prompt="DBD_PARAMETRAGE_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GBAZpZ1GEeiLHaXpSghBGw" comment="" name="DBD_PARAMETRAGE_Schema" prompt="DBD_PARAMETRAGE_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GBAZpp1GEeiLHaXpSghBGw" comment="" name="DBD_PARAMETRAGE_Database" prompt="DBD_PARAMETRAGE_Database?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_GBAZp51GEeiLHaXpSghBGw" comment="" name="DBD_PARAMETRAGE_Port" prompt="DBD_PARAMETRAGE_Port?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

@@ -1,0 +1,58 @@
+package routines;
+
+import java.util.Date;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class routineDate {
+
+    /**
+     * checkYearLessThan1753: Vérifie si l'année est inférieur à 1753 et si c'est le cas renvoie null, sinon la valeur transformer en date.
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} CheckData.
+     * 
+     * {param} String dateSource.
+     * 
+     * {example} routineCBP.checkYearLessThan1753("0017-04-05T00:00:00Z") # null.
+     * {example} routineCBP.checkYearLessThan1753("1999-06-24T00:00:00Z") # 1999-06-24 00:00:00.
+     */
+	public static Date checkYearLessThan1753(String dateSource){
+		if(dateSource != null && !dateSource.equals("")){
+			int testDate = Integer.parseInt(dateSource.substring(0,4));
+			if(testDate < 1753){
+				return null;
+			}else{
+				Date newDate = TalendDate.parseDate("yyyy-MM-dd'T'HH:mm:ss'Z'",dateSource);
+				return newDate;
+			}
+		}else{
+			return null;
+		}
+	}
+	public static Date castStringToDate(String dateSource){
+		if(dateSource != null && !dateSource.equals("")){
+				Date newDate = TalendDate.parseDate("yyyy-MM-dd'T'HH:mm:ss'Z'",dateSource);
+				return newDate;		
+		}else{
+			return null;
+		}
+	}
+}
